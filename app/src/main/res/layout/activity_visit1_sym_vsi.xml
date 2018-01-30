@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:background="@drawable/blur3"
+    tools:context="com.example.abdulsamadkhan.audiotest.Visit1SymVsi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ssmoking"
+            android:background="@color/gray"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="16dp"
+            android:text="Symptoms"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textView499"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview1"
+            android:text="Chest Pain :"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+             />
+
+        <Spinner
+            android:id="@+id/sChestPain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview1"
+            android:entries="@array/History"
+            android:paddingLeft="150dp"
+            android:paddingTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tNausea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nausea :"
+            android:layout_below="@id/textView499"
+            android:textSize="16sp"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <Spinner
+                android:id="@+id/sNausea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tNausea"
+                android:layout_below="@+id/sChestPain"
+                android:entries="@array/History"
+                android:paddingLeft="72dp"
+                android:paddingTop="8dp"
+                 />
+
+                    <TextView
+                        android:id="@+id/tNeckPain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tNausea"
+                        android:textSize="16sp"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="8dp"
+                        android:text="Neck Pain :"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <Spinner
+                        android:id="@+id/sNeckPain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sNausea"
+                            android:layout_toRightOf="@id/tNeckPain"
+                        android:paddingTop="8dp"
+                            android:paddingLeft="54dp"
+                        android:entries="@array/History"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="142dp" />
+
+                            <TextView
+                                android:id="@+id/tSweating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tNeckPain"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="16dp"
+                                android:textSize="16sp"
+                                android:text="Sweating :"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                            <Spinner
+                                android:id="@+id/sSweating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/tSweating"
+                                android:layout_below="@+id/tNeckPain"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="60dp"
+                                android:entries="@array/History"
+                                tools:layout_editor_absoluteX="8dp"
+                                tools:layout_editor_absoluteY="142dp" />
+
+                                        <TextView
+                                            android:id="@+id/tShortofbreath"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/tSweating"
+                                            android:paddingTop="8dp"
+                                            android:paddingLeft="16dp"
+                                            android:textSize="16sp"
+                                            android:text="Short of breath :"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                                        <Spinner
+                                            android:id="@+id/sShortofbreath"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/tSweating"
+                                            android:layout_toRightOf="@id/tShortofbreath"
+                                            android:paddingTop="8dp"
+                                            android:paddingLeft="19dp"
+                                            android:entries="@array/History"
+                                            tools:layout_editor_absoluteX="8dp"
+                                            tools:layout_editor_absoluteY="142dp" />
+        <TextView
+            android:id="@+id/tCholestrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tShortofbreath"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:textSize="16sp"
+            android:text="Cholestrol Level :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Spinner
+            android:id="@+id/sCholesterol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sShortofbreath"
+            android:layout_toRightOf="@id/tCholestrol"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:entries="@array/Clevel"
+             />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sCholesterol"
+            android:text="Vital Signs"
+            android:background="@color/gray"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:textSize="17sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/BP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView9"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:text="Blood Pressure"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp" />
+
+
+        <EditText
+
+            android:id="@+id/etsystole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:gravity="left"
+            android:textCursorDrawable="@null"
+            android:layout_below="@id/BP"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:paddingLeft="8dp"
+            android:inputType="number"
+            android:hint=" Systole"/>
+
+
+        <EditText
+
+            android:id="@+id/etdystole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etsystole"
+            android:background="@drawable/round"
+            android:gravity="left"
+            android:paddingLeft="8dp"
+            android:ems="10"
+            android:hint=" Diastole"
+            android:layout_marginTop="8dp"
+            android:textCursorDrawable="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etdystole"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:text="Temperature"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <EditText
+            android:id="@+id/etTemperature"
+            android:layout_below="@id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:background="@drawable/round"
+            android:gravity="left"
+            android:paddingLeft="8dp"
+            android:hint="Temperature"
+            android:textCursorDrawable="@null"
+            android:inputType="number" />
+
+        <TextView
+
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etTemperature"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:text="Heart Rate "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp" />
+
+        <EditText
+
+            android:id="@+id/etHeartBeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView14"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="Heart Rate"
+            android:inputType="number"
+            android:paddingLeft="8dp"
+            android:textCursorDrawable="@null" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/bNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_arrow_right"
+            app:useCompatPadding="true"
+            app:backgroundTint="#009688"
+            app:elevation="4dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_below="@+id/etHeartBeat"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="14dp" />
+
+            </RelativeLayout>
+
+
+        </ScrollView>

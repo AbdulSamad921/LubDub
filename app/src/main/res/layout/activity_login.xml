@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teel"
+
+    tools:context="com.example.abdulsamadkhan.audiotest.Login">
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:shape="rectangle"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:hint="Email"
+        android:background="@drawable/shape"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Password"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:shape="rectangle"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/etEmail"
+        android:background="@drawable/shape" />
+
+    <Button
+        android:id="@+id/bSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/teel"
+        android:text="Sign In"
+        android:layout_below="@+id/etPassword"
+        android:layout_toStartOf="@+id/tvRegisterLink"
+        android:layout_alignEnd="@+id/etPassword" />
+
+    <TextView
+        android:id="@+id/tvRegisterLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Not a member? Sign up now"
+        android:textSize="16sp"
+        android:layout_below="@+id/bSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo1"
+        android:layout_marginTop="35dp"
+        android:scaleType="fitCenter"/>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
+
+    android:background="@drawable/background"
+    tools:context="com.example.abdulsamadkhan.audiotest.recorder">
+
+    <ImageButton
+
+        android:id="@+id/play"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_action_playback_play"
+        android:text="Play"
+        android:layout_alignTop="@+id/bpause"
+        android:layout_alignStart="@+id/record" />
+
+    <ImageButton
+        android:id="@+id/record"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/ic_action_record"
+        android:text="Record"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="152dp" />
+
+    <ImageButton
+
+        android:id="@+id/stop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/ic_action_playback_stop"
+        android:text="Stop"
+        android:layout_alignTop="@+id/record"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp" />
+
+    <android.support.design.widget.FloatingActionButton
+
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_tick1"
+        app:useCompatPadding="true"
+        app:backgroundTint="#009688"
+        app:elevation="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        />
+
+    <ImageButton
+        android:id="@+id/bpause"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_action_playback_pause"
+        android:text="Pause"
+        android:layout_marginTop="67dp"
+        android:layout_below="@+id/stop"
+        android:layout_alignStart="@+id/stop" />
+
+
+</RelativeLayout>
+

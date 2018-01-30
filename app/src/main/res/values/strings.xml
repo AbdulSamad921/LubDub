@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">LubDub</string>
+
+    <string-array name="Gender">
+        <item> Male </item>
+        <item> Female </item>
+    </string-array>
+    <string-array name="History">
+
+        <item> No </item>
+        <item> Yes </item>
+    </string-array>
+    <string-array name="BloodGroup">
+        <item> A+ </item>
+        <item> A- </item>
+        <item> B+ </item>
+        <item> B- </item>
+        <item> AB+ </item>
+        <item> AB- </item>
+        <item> O- </item>
+        <item> O+ </item>
+    </string-array>
+    <string-array name="Clevel">
+        <item> Good </item>
+        <item> BorderLine </item>
+        <item> High </item>
+        <item> Low </item>
+    </string-array>
+</resources>

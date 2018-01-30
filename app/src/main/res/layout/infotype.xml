@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/pname"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:text="name" />
+
+        <TextView
+            android:id="@+id/page"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:text="age" />
+
+        <TextView
+            android:id="@+id/pGender"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:text="Gender" />
+
+        <TextView
+            android:id="@+id/pBlood"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:text="Blood" />
+
+        <TextView
+            android:id="@+id/pAddress"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:text="Address" />
+
+        <TextView
+            android:id="@+id/pCity"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:text="City" />
+
+        <TextView
+            android:id="@+id/pcontact"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text="Contact" />
+
+        <TextView
+            android:id="@+id/pht"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text="hypertension" />
+
+        <TextView
+            android:id="@+id/psmoking"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:text="smoking" />
+
+        <TextView
+            android:id="@+id/php"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:text="heartproblem" />
+
+        <TextView
+            android:id="@+id/pdia"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:text="Diabetic" />
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

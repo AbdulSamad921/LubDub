@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "899161321033",
+    "firebase_url": "https://audiotest-7433a.firebaseio.com",
+    "project_id": "audiotest-7433a",
+    "storage_bucket": "audiotest-7433a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899161321033:android:24fd196b758bcd27",
+        "android_client_info": {
+          "package_name": "com.example.abdulsamadkhan.audiotest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899161321033-djm463erm74mal5kh1ha0ctuqmnctmpr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abdulsamadkhan.audiotest",
+            "certificate_hash": "bacad378af9c365e82830ce40bd1389308362a7f"
+          }
+        },
+        {
+          "client_id": "899161321033-0s5e3ml0hfulqllva4eb9t6d3mcr0a0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPJzfKUYZEFLjOkjEPR7Ab4ObsmEir1qE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899161321033-0s5e3ml0hfulqllva4eb9t6d3mcr0a0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899161321033:android:0bcb33e3d3dfead6",
+        "android_client_info": {
+          "package_name": "com.newventuresoftware.waveformdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899161321033-lhgndingeqgint8o3v9b72ujqo0ciogd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newventuresoftware.waveformdemo",
+            "certificate_hash": "bacad378af9c365e82830ce40bd1389308362a7f"
+          }
+        },
+        {
+          "client_id": "899161321033-0s5e3ml0hfulqllva4eb9t6d3mcr0a0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPJzfKUYZEFLjOkjEPR7Ab4ObsmEir1qE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899161321033-0s5e3ml0hfulqllva4eb9t6d3mcr0a0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/blur3"
+    tools:context="com.example.abdulsamadkhan.audiotest.MedicalHistory">
+
+    <TextView
+        android:id="@+id/theart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heartproblem"
+        android:layout_below="@+id/sdiabetic"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:id="@+id/tDiabetic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ssmoking"
+        android:layout_marginTop="27dp"
+        android:text="Diabetic" />
+
+    <Spinner
+        android:id="@+id/ssmoking"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/History"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="142dp"
+        android:layout_below="@+id/tSmoking"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tSmoking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smoking"
+        android:layout_below="@+id/shypertension"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:id="@+id/bHistoryRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add data"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="304dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="115dp" />
+
+    <Spinner
+        android:id="@+id/shypertension"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="142dp"
+        android:entries="@array/History"
+        android:layout_below="@+id/tHyper"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tHyper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HyperTension"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/sdiabetic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tDiabetic"
+        android:entries="@array/History" />
+
+    <Spinner
+        android:id="@+id/sheartproblem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/History"
+        android:layout_below="@+id/theart"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

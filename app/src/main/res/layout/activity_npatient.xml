@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@android:style/Widget.DeviceDefault.ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.abdulsamadkhan.audiotest.Npatient">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/blur3"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/myFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_arrow_right"
+            app:useCompatPadding="true"
+            app:backgroundTint="#009688"
+            app:elevation="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_below="@id/shypertension"
+        />
+
+        <EditText
+            android:id="@+id/etDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:gravity="left"
+            android:textCursorDrawable="@null"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="8dp"
+            android:ems="10"
+            android:hint=" Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etDoctorEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/round"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etDoctorName"
+            android:textCursorDrawable="@null"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint=" Age"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_below="@id/etDoctorEmail"
+            android:text="Gender :"
+            android:textSize="17sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Spinner
+            android:id="@+id/sGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView5"
+            android:spinnerMode="dialog"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/etDoctorEmail"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:entries="@array/Gender" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:paddingLeft="8dp"
+            android:layout_margin="10dp"
+            android:textSize="17sp"
+            android:text="Blood Group :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Spinner
+            android:id="@+id/sblood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:entries="@array/BloodGroup"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignEnd="@+id/sGender" />
+
+        <EditText
+            android:id="@+id/etPatientWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sblood"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"            android:textCursorDrawable="@null"
+            android:background="@drawable/round"
+            android:paddingLeft="8dp"
+            android:ems="10"
+            android:hint=" Weight"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etPatientaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etPatientWeight"
+            android:background="@drawable/round"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="8dp"
+            android:ems="10"
+            android:hint=" Address"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/etPatientCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textCursorDrawable="@null"
+            android:layout_below="@+id/etPatientaddress"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint=" City"
+            android:background="@drawable/round"
+            android:inputType="text"
+            android:paddingLeft="8dp"/>
+
+        <EditText
+            android:id="@+id/etPatientcontact"
+            android:background="@drawable/round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etPatientCity"
+            android:layout_margin="10dp"
+            android:hint=" Contact"
+            android:inputType="none"
+            android:paddingLeft="8dp"/>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:background="@color/gray"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif"
+            android:text="Add Patient History"
+            android:layout_below="@id/etPatientcontact"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <TextView
+            android:id="@+id/theart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:paddingTop="14dp"
+            android:paddingLeft="18dp"
+            android:text="Heart Problem :"
+            android:textSize="17sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Spinner
+            android:id="@+id/sheartproblem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingLeft="150dp"
+            android:spinnerMode="dialog"
+            android:entries="@array/History"
+            android:layout_below="@+id/textView3"
+          />
+
+        <TextView
+            android:id="@+id/tDiabetic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sheartproblem"
+            android:paddingTop="8dp"
+            android:text="Diabetic :"
+            android:paddingLeft="18dp"
+            android:textSize="17sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Spinner
+            android:id="@+id/sdiabetic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/History"
+            android:paddingLeft="60dp"
+            android:paddingTop="8dp"
+            android:layout_toRightOf="@id/tDiabetic"
+            android:layout_below="@id/sheartproblem"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tSmoking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdiabetic"
+            android:layout_alignParentStart="true"
+            android:paddingTop="8dp"
+            android:paddingLeft="18dp"
+            android:text="Smoking :"
+            android:textSize="17sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Spinner
+            android:id="@+id/ssmoking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tSmoking"
+            android:layout_below="@id/sdiabetic"
+            android:paddingTop="8dp"
+            android:paddingLeft="54dp"
+            android:entries="@array/History"
+             />
+
+        <TextView
+            android:id="@+id/tHyper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ssmoking"
+            android:paddingTop="8dp"
+            android:textSize="17sp"
+            android:paddingLeft="18dp"
+            android:text="Hyper Tension :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Spinner
+            android:id="@+id/shypertension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tHyper"
+            android:layout_below="@id/ssmoking"
+            android:entries="@array/History"
+            android:paddingTop="8dp"
+            android:paddingLeft="12dp"/>
+
+
+    </RelativeLayout>
+</ScrollView>
